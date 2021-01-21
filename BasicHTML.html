@@ -1,0 +1,251 @@
+<!--This is a comment-->
+<!--Opening tag <> Closing tag </>-->
+<!--<!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly. Declaration for HTML5-->
+<!DOCTYPE html>
+<!--HTML tag marking the beginning of the html document-->
+<html lang="en">
+  <!--Head tag-->
+  <head>
+    <!--meta element typically used to specify the character set, page description, keywords, author of the document and viewport settings. Doesnt display on the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-COmpatible" content="ie=edge">
+    <meta name="description"  content="This is my website description">
+    <meta name="keywords" content="web development, web design">
+    <!--Does not index page-->
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+    <meta name="author" content="ProgrammingPandaSal">
+    <!--Title tag to give the tab in your browser a name-->
+    <title>Basic HTML</title>
+  </head>
+  <div>
+    <!--Heading Tags in descending size order-->
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+    
+    <!--Paragraph Tag-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error nemo eaque nam non numquam sunt laborum eos
+      <!--hr is Horizontal rule which creates a horizontal line on the document-->
+      <hr>
+      <!--These are tags that are njot really used in HTML. CSS replaces these tags-->
+      <strong>Strong tag defines importance for this phrase.</strong>
+      <em>Emphasis italicises this phrase.</em>
+      <b>Bold tag bolds this phrase.</b>
+      <del>Semantic tag that creates a strikethrough this phrase.</del>
+      <!--br tag is a break tag where it gives an extra space between the area where its placed--> 
+      <br>
+      voluptatem blanditiis magnam porro, quos consectetur sequi officia tempora harum qui ducimus optio.
+    </p>
+
+    <!--Linking attribute wether it can be a text, image, website, etc.-->
+    <p>
+      <a href="http://google.com">Click for Google</a>
+    </p>
+    <!--target means the link will open somewhere else. In this case in a new tab.-->
+    <p>
+      <a href="http://google.com" target="_blank">Click for Google</a>
+    </p>
+    <p>
+      <a href="/PandaSalGamingWebsite.html">PandaSalGaming's Website</a>
+    </p>
+    <p>
+      <!--Link a local image only within the same folder-->
+      <img src="/Transparent Red(Steam).PNG" alt="My Image">
+    </p>
+    <p>
+      <a href="https://imgur.com/AQ57PJw" alt="My Image 2">My Image 2</a>
+    </p>
+
+    <!--ul creates and unordered lists where on the webpage it shows a bulleted list-->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <!--ol shows an ordered lists where on the webpage it shows numbers-->
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+    <!--Nested lists which are lists within a list-->
+    <ul>
+      <li>Item 1</li>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ol>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <!--Tables are used for tabular data-->
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>jdoe@email.com</td>
+        </tr>
+        <tr>
+          <td>Kate</td>
+          <td>Smith</td>
+          <td>ksmith@email.com</td>
+        </tr>
+        <tr>
+          <td>Jeff</td>
+          <td>Wilson</td>
+          <td>jwilson@email.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--Forms are created to collect and submit data from the user-->
+    <form action="process.php">
+      <!--Text input-->
+      <div>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <!--Email Input-->
+      <div>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter an email">
+      </div>
+
+      <!--Text Area input-->
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+      </div>
+
+      <!--Select input-->
+      <div>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="Female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!--Number input-->
+      <div>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age">
+      </div>
+
+      <!--Date input-->
+      <div>
+        <label for="birthdate">birthdate</label><br>
+        <input type="date" name="birthdate" id="birthdate">
+      </div>
+
+      <!--Radio Button-->
+      <div>
+        <label for="membership">Membership</label>
+        <input type="radio" name="membership" value="simple" id="membership">Simple
+        <input type="radio" name="membership" value="standard" id="membership">Standard
+        <input type="radio" name="membership" value="super" id="membership">Super
+      </div>
+
+      <!--Checkbox input-->
+      <div>
+        <label for="membership">I like...</label>
+        <input type="checkbox" name="likes" value="bike" id="likes">Bike
+        <input type="checkbox" name="likes" value="car" id="likes">Car
+        <input type="checkbox" name="likes" value="boat" id="likes">Boat
+      </div>
+
+      <!--Input Submit-->
+      <input type="submit" value="Submit">
+
+      <!--Button submit-->
+      <button type="submit">Submit</button>
+
+      <!--Reset Button-->
+      <button type="reset">Reset</button>
+    </form>
+
+    <!--Inline vs Block-->
+    <!--Block level-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae animi iure dolores accusantium sit perspiciatis sint, maxime ut culpa, mollitia optio eos laudantium sequi. Non voluptatem tenetur libero nostrum!</p>
+
+    <!--Inline-->
+    <a href="#">A Link</a>
+    <a href="#">A Link</a>
+
+    <!--div is a division of the html document-->
+    <div id="main-header">
+      <h1>My Website</h1>
+      <p>A site about me</p>
+    </div>
+    <ul id="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="about">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Dicta</span>, inventore assumenda ullam illum ipsum maiores explicabo possimus consectetur architecto dolorem, dolores veritatis. Ullam ducimus aliquam molestias cumque? Maxime, repellendus eos.</p>
+    </div>
+    <div id="contact">
+      <h3>Contact me</h3>
+      <ul>
+        <li>Address: 50 Main st. Boston, MA</li>
+        <li>Phone: (555) 555-5555</li>
+        <li>Email: me@somethingcool.com</li>
+      </ul>
+    </div>
+    <!--Footer with copyright sign-->
+    <div id="footer">
+      <p>Copyright &copy; 2019</p>
+    </div>
+  </div>
+
+  <!--Entities which are characters in HTML that must be used to replace reserved characters-->
+  <p>Hello &nbsp; &nbsp; &nbsp; World!</p>
+  <p>5 &gt; 2 &lt; 3</p>
+  <p>&copy; &reg; &cent; &pound; &yen; &spades; &clubs; &hearts; &diams;</p>
+  <!--Adding code snippet using entities-->
+  <code>
+    &lt;?php echo 'Hello' ?&gt;
+  </code>
+  <p>Save the file by pressing <kbd>Ctrl + S</kbd></p>
+
+  <!--Semantic tags-->
+  <ul>
+    <li>Header</li><!--top of the webpage-->
+    <li>Footer</li><!--bottom of the webpage-->
+    <li>nav</li><!--set of navigation links-->
+    <li>main</li><!--specifies the main content of a document-->
+    <li>section</li><!--defines a section in a document-->
+    <li>article</li><!--defines independent, self-contained content-->
+    <li>aside</li><!--defines content aside from the page content-->
+  </ul>
+  </body>
+</html>
